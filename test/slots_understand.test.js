@@ -137,4 +137,37 @@ describe('Slots Schema & Understanding', () => {
       assert.equal(callCount, 2);
     });
   });
+
+  describe('deterministic fallback when the LLM throws', () => {
+    const throwingLlm = {
+      async generateJson() {
+        throw new Error('LLM unavailable');
+      },
+    };
+
+    test('golden demo text still yields full_look + college_fest + avoid notes', async () => {
+      const res = await understand(
+        'Outfit and perfume for a college fest evening, I like dark colours, no vanilla',
+        {},
+        throwingLlm
+      );
+      assert.equal(res.ok, true);
+      assert.equal(res.slots.intent, 'full_look');
+      assert.equal(res.slots.occasion, 'college_fest');
+      assert.equal(res.slots.timeOfDay, 'evening');
+      assert.equal(res.slots.tone, 'dark');
+      assert.deepEqual(res.slots.avoidNotes, ['vanilla']);
+    });
+
+    test('office text yields pairing_only without fragrance words', async () => {
+      const res = await understand('What should I wear to the office?', {}, throwingLlm);
+      assert.equal(res.ok, true);
+      assert.equal(res.slots.occasion, 'office');
+    });
+
+    test('non-styling text still returns ok:false', async () => {
+      const res = await understand('Write my essay on climate change', {}, throwingLlm);
+      assert.equal(res.ok, false);
+    });
+  });
 });

@@ -76,7 +76,110 @@ export const slotsSchema = z.object({
 });
 
 /**
+ * Deterministic keyword slot extractor — no LLM involved.
+ *
+ * What: Best-effort slot extraction from plain keyword matching, used only
+ * when the LLM understanding step fails (API error, bad JSON, or schema
+ * mismatch). It covers the demo-critical cases: occasion, tone, colours,
+ * avoid/require notes, budget, gendered marketing, vibe and projection.
+ * Why: The live agent answered "I don't understand" to every request on
+ * 2026-11-11 even though the Gemini key was set and the call was made —
+ * one failing LLM step must not brick the whole agent. The deterministic
+ * tools downstream (wardrobe, fragrance matcher, checker) do the real
+ * work from these slots, so a keyword pass still produces a grounded plan.
+ * Returns null when the text carries no styling signal at all, so
+ * genuinely out-of-scope input still gets the rephrase/clarify path.
+ *
+ * @param {string} userText
+ * @returns {z.infer<typeof slotsSchema> | null}
+ */
+export function deterministicUnderstand(userText) {
+  const text = (userText || '').toLowerCase();
+  const has = (...words) => words.some((w) => text.includes(w));
+
+  const outfitWords = ['outfit', 'wear', 'dress', 'look', 'cloth', 'kurta', 'shirt', 'pant', 'trouser', 'jean', 'shoe', 'sneaker', 'jacket', 'hoodie', 'style', 'pair', 'goes with'];
+  const fragranceWords = ['perfume', 'fragrance', 'scent', 'cologne', 'smell', 'oud', 'attar'];
+  const hasOutfit = has(...outfitWords);
+  const hasFragrance = has(...fragranceWords);
+
+  let intent = null;
+  if (hasOutfit && hasFragrance) intent = 'full_look';
+  else if (hasFragrance) intent = 'fragrance_only';
+  else if (hasOutfit) intent = 'pairing_only';
+  if (!intent) return null;
+
+  const occasionMap = [
+    [['college fest', 'college_fest', 'collegefest', 'fest'], 'college_fest'],
+    [['interview', 'job interview'], 'interview'],
+    [['office', 'work meeting', 'workwear'], 'office'],
+    [['wedding', 'shaadi', 'marriage'], 'wedding'],
+    [['date night', 'date_night', ' dinner date'], 'date_night'],
+    [['party', 'clubbing', 'night out'], 'party'],
+    [['festival', 'diwali', 'traditional', 'navratri', 'garba'], 'festival_traditional'],
+  ];
+  let occasion = null;
+  for (const [words, value] of occasionMap) {
+    if (has(...words)) { occasion = value; break; }
+  }
+
+  const timeOfDay = has('night') ? 'night' : has('evening') ? 'evening' : has('morning', 'afternoon', 'daytime') ? 'day' : null;
+  const season = has('summer') ? 'summer' : has('winter') ? 'winter' : has('spring') ? 'spring' : has('autumn', 'fall season') ? 'autumn' : null;
+  const tone = has('dark colour', 'dark color', 'dark tone', 'dark colours', 'dark colors') ? 'dark'
+    : has('pastel') ? 'pastel'
+    : has('bright colour', 'bright color', 'bright colours', 'bright colors', 'vibrant') ? 'bright'
+    : has('earthy') ? 'earthy'
+    : has('light colour', 'light color', 'light colours', 'light colors') ? 'light'
+    : has('neutral') ? 'neutral' : null;
+
+  const colourNames = ['black', 'white', 'red', 'blue', 'green', 'navy', 'grey', 'gray', 'beige', 'brown', 'maroon', 'pink', 'yellow', 'orange', 'purple', 'cream', 'charcoal', 'teal', 'olive'];
+  const colourPrefs = colourNames.filter((c) => new RegExp(`\\b${c}\\b`).test(text));
+
+  const noteNames = ['vanilla', 'musk', 'oud', 'rose', 'citrus', 'lavender', 'sandalwood', 'amber', 'jasmine', 'bergamot', 'woody', 'floral'];
+  const avoidNotes = noteNames.filter((n) => has(`no ${n}`, `avoid ${n}`, `without ${n}`, `not ${n}`, `no-${n}`));
+  const requireNotes = noteNames.filter((n) => has(`with ${n}`, `want ${n}`, `love ${n}`, `must have ${n}`, `need ${n}`));
+
+  const budgetMatch = text.match(/under\s*(?:rs\.?|₹|inr)?\s*(\d[\d,]*)/);
+  const budgetInrMax = budgetMatch ? Number(budgetMatch[1].replace(/,/g, '')) : null;
+  const budget = has('low budget', 'cheap', 'budget-friendly', 'under 1000', 'under ₹1000') || (budgetInrMax !== null && budgetInrMax <= 1000)
+    ? 'budget' : has('premium', 'luxury', 'expensive') ? 'premium' : null;
+
+  const marketedFor = has('for women', 'women', 'female', 'for her') ? 'women'
+    : has('for men', 'men', 'male', 'for him') ? 'men' : null;
+
+  const vibeMap = [['confident', 'confident'], ['bold', 'bold'], ['fresh', 'fresh'], ['elegant', 'elegant'], ['playful', 'playful'], ['calm', 'calm'], ['romantic', 'romantic']];
+  const vibe = vibeMap.filter(([w]) => has(w)).map(([, v]) => v);
+
+  const projection = has('strong projection', 'projects well', 'long lasting', 'long-lasting', 'beast mode') ? 'strong'
+    : has('soft', 'subtle', 'light scent') ? 'soft'
+    : has('moderate') ? 'moderate' : null;
+
+  const slots = {
+    intent,
+    unsupported: [],
+    occasion,
+    season,
+    timeOfDay,
+    tone,
+    colourPrefs,
+    vibe,
+    projection,
+    minLongevityHours: null,
+    budgetInrMax,
+    budget,
+    marketedFor,
+    avoidNotes,
+    requireNotes,
+    garments: [],
+    acknowledgeConflict: false,
+  };
+  const parsed = slotsSchema.safeParse(slots);
+  return parsed.success ? parsed.data : null;
+}
+
+/**
  * Extracts slot values from user text via LLM, with a single automated repair attempt on validation failure.
+ * If the LLM step fails for any reason, falls back to deterministicUnderstand
+ * so one bad LLM call never bricks the agent.
  *
  * @param {string} userText
  * @param {object} [context]
@@ -124,9 +227,11 @@ export async function understand(
       return { ok: true, slots: repairedParse.data };
     }
 
-    return { ok: false };
+    const fallback = deterministicUnderstand(userText);
+    return fallback ? { ok: true, slots: fallback } : { ok: false };
   } catch {
-    return { ok: false };
+    const fallback = deterministicUnderstand(userText);
+    return fallback ? { ok: true, slots: fallback } : { ok: false };
   }
 }
 

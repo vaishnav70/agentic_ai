@@ -107,4 +107,44 @@ describe('Response Composer', () => {
     assert.ok(reply.includes('## Fragrance pick'));
     assert.ok(reply.includes('Outfit harmony score: **85/100**'));
   });
+
+  test('fragrance notes come from the dataset lookup when matcher results carry none (regression: "None listed")', async () => {
+    // Mirrors the real matcher output: id/name/brand/score only, no notes,
+    // no projection, no longevity_hours. Full entry lives in data.perfumes.
+    const structured = JSON.parse(JSON.stringify(structuredFixture));
+    structured.fragrance.results = [
+      { id: 'p_022', name: 'Invictus', brand: 'Paco Rabanne', score: 83, reasons: ['Direct occasion match for "college_fest"'], matched: {}, caveats: [] },
+      { id: 'p_004', name: 'Sauvage Elixir', brand: 'Dior', score: 80, reasons: [], matched: {}, caveats: [] },
+    ];
+    structured.data.perfumes = [
+      {
+        id: 'p_022',
+        name: 'Invictus',
+        brand: 'Paco Rabanne',
+        notes: { top: ['grapefruit', 'marine accord'], heart: ['bay leaf', 'jasmine'], base: ['ambergris', 'guaiac wood', 'oakmoss', 'patchouli'] },
+        projection: 'strong',
+        longevity_hours: '6-8 hours',
+      },
+      {
+        id: 'p_004',
+        name: 'Sauvage Elixir',
+        brand: 'Dior',
+        notes: { top: ['grapefruit', 'nutmeg'], heart: ['lavender'], base: ['amber'] },
+        projection: 'strong',
+        longevity_hours: '8-10 hours',
+      },
+    ];
+
+    const reply = renderFallbackReply(structured);
+
+    assert.ok(reply.includes('Top: grapefruit, marine accord'), 'top notes should come from the dataset');
+    assert.ok(reply.includes('Heart: bay leaf, jasmine'), 'heart notes should come from the dataset');
+    assert.ok(reply.includes('Base: ambergris, guaiac wood, oakmoss, patchouli'), 'base notes should come from the dataset');
+    assert.ok(reply.includes('Projection: strong'), 'projection should come from the dataset, not the moderate default');
+    assert.ok(reply.includes('6-8 hours'), 'longevity should come from the dataset, not the medium default');
+    assert.equal(reply.includes('hours hrs'), false, 'string longevity ranges must not get a doubled unit');
+    assert.ok(reply.includes('Sauvage Elixir'), 'alternative should still be listed');
+    assert.ok(reply.includes('grapefruit, nutmeg'), 'alternative notes should come from the dataset');
+    assert.equal(reply.includes('None listed'), false, 'no "None listed" should remain when the dataset has notes');
+  });
 });

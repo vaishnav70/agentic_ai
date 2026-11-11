@@ -13,6 +13,45 @@ import { COMPOSE_SYSTEM } from './prompts.js';
 import { MESSAGES } from './messages.js';
 
 /**
+ * Matcher results carry NO notes, projection or longevity — they only carry
+ * id/name/brand/score/reasons (see src/tools/perfume.js). The full entry
+ * lives in structured.data.perfumes, so notes must be looked up by id,
+ * exactly like src/tools/outputs.js does. The composer used to read
+ * result.top_notes / heart_notes / base_notes, which never exist, so every
+ * live reply showed "Notes: Top: None listed" (bug found 2026-11-11 in the
+ * first Nonilion test message). These helpers resolve a matcher result to
+ * its full dataset entry, preferring any notes already on the result itself
+ * (kept for fixtures/tests that carry flat *_notes fields).
+ */
+export function fullPerfumeEntry(structured, result) {
+  if (!result) return null;
+  if (result.notes && (result.notes.top?.length || result.notes.heart?.length || result.notes.base?.length)) {
+    return result;
+  }
+  if (result.top_notes?.length || result.heart_notes?.length || result.base_notes?.length) {
+    return result;
+  }
+  const all = structured?.data?.perfumes;
+  if (Array.isArray(all)) {
+    const found = all.find((p) => p.id === result.id);
+    if (found) return found;
+  }
+  return result;
+}
+
+function noteList(entry, key) {
+  const nested = entry?.notes?.[key];
+  if (Array.isArray(nested) && nested.length > 0) return nested.join(', ');
+  const flat = entry?.[`${key}_notes`];
+  if (Array.isArray(flat) && flat.length > 0) return flat.join(', ');
+  return null;
+}
+
+function allNotes(entry) {
+  return [...(entry?.notes?.top || []), ...(entry?.notes?.heart || []), ...(entry?.notes?.base || [])];
+}
+
+/**
  * Builds deterministic fallback sentences when LLM output is unavailable or discarded.
  *
  * @param {Object} structured
@@ -135,13 +174,18 @@ function assembleMarkdown(structured, prose) {
       const top = results[0];
       fragMd += `**${top.name}** by ${top.brand} (id: \`${top.id}\`) — Match score: **${top.score}/100**\n`;
 
-      const topNotes = top.top_notes?.join(', ') || 'None listed';
-      const heartNotes = top.heart_notes?.join(', ') || 'None listed';
-      const baseNotes = top.base_notes?.join(', ') || 'None listed';
+      const full = fullPerfumeEntry(structured, top);
+      const topNotes = noteList(full, 'top') || 'None listed';
+      const heartNotes = noteList(full, 'heart') || 'None listed';
+      const baseNotes = noteList(full, 'base') || 'None listed';
       fragMd += `- **Notes:** Top: ${topNotes} | Heart: ${heartNotes} | Base: ${baseNotes}\n`;
 
-      const proj = top.projection ? top.projection : 'moderate';
-      const longHrs = top.longevity_hours ? `~${top.longevity_hours} hrs` : 'medium';
+      const proj = full?.projection ? full.projection : 'moderate';
+      // longevity_hours in the dataset is a string range ("6-8 hours"), not a
+      // number — render it as-is; only numeric values get the "~N hrs" form.
+      const longHrs = full?.longevity_hours
+        ? (typeof full.longevity_hours === 'number' ? `~${full.longevity_hours} hrs` : String(full.longevity_hours))
+        : 'medium';
       fragMd += `- **Performance:** Projection: ${proj} | Longevity: ${longHrs}\n\n`;
 
       if (prose.fragrance_why) {
@@ -152,7 +196,8 @@ function assembleMarkdown(structured, prose) {
         fragMd += `**Alternatives:**\n`;
         const alts = results.slice(1, 3);
         for (const alt of alts) {
-          const altNotes = alt.top_notes?.slice(0, 3).join(', ') || 'Fresh notes';
+          const fullAlt = fullPerfumeEntry(structured, alt);
+          const altNotes = allNotes(fullAlt).slice(0, 3).join(', ') || 'No notes listed';
           fragMd += `- **${alt.name}** by ${alt.brand} (id: \`${alt.id}\`) — Match: ${alt.score}/100, Notes: ${altNotes}\n`;
         }
       }
@@ -227,7 +272,7 @@ export function composeReply(structured, llm) {
       ? {
           name: topFragrance.name,
           brand: topFragrance.brand,
-          notes: topFragrance.top_notes?.concat(topFragrance.heart_notes || []),
+          notes: allNotes(fullPerfumeEntry(structured, topFragrance)),
           score: topFragrance.score,
         }
       : null,

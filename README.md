@@ -6,7 +6,7 @@ StyleScent is an AI personal-styling agent built for Nonilion (INNOVORTEX 4.0 ha
 
 - **M0–M3 complete:** scaffold, curated data, deterministic styling tools, orchestrator with multi-turn memory, clarification and refusals.
 - **M4 complete (text + files):** real safety checker (rules C1–C6, `src/agent/checker.js`) and multi-format outputs — CSV shopping list and Markdown outfit plan (`src/tools/outputs.js`), attached to every full-look / fragrance reply. Mood-board PNG is **not** built yet (no image renderer dependency installed).
-- **M5 pending:** Nonilion adapter is still a stub — `POST /webhook/nonilion` returns `501 Not Implemented` until the official Nonilion developer guide / pairing code arrives.
+- **M5 in progress:** `POST /webhook/nonilion` is live with a tolerant parser (accepts `{"text": ...}` and common nested shapes) and replies via the real orchestrator. Official Nonilion auth/signature verification and the exact payload format still wait on the developer guide / pairing code.
 - **Dataset (honest):** 42 perfumes in `data/perfumes.json`, all `verified: false` until manually checked. See `data/VERIFY.md` for the coverage audit — college fest (11), interview (6), budget (8) and women's (4) entries now cover the golden scenarios; the 22 entries added 11 Nov 2026 (p_021–p_042) still need their notes verified against real listings before the demo. Only `festival_traditional` (3) is still below its threshold of 6.
 - **Tests:** run `npm test` (Node's built-in runner, no extra framework).
 
@@ -50,4 +50,4 @@ StyleScent is an AI personal-styling agent built for Nonilion (INNOVORTEX 4.0 ha
 
 - `GET /health`: Returns service health, uptime, and version (`200 OK`).
 - `POST /dev/chat`: Local testing chat endpoint accepting `{ "text": "..." }` (available in non-production). A successful full-look reply returns `text` plus `files` — `stylescent-shopping-list.csv` and `stylescent-outfit-plan.md` — and a `trace.checker` verdict.
-- `POST /webhook/nonilion`: Nonilion webhook receiver (returns `501 Not Implemented` stub until official Nonilion developer guide is provided).
+- `POST /webhook/nonilion`: Nonilion webhook receiver — parses the payload, runs the orchestrator, replies inline as JSON (official auth/format still pending the developer guide).

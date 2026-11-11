@@ -71,16 +71,42 @@ describe('Server Endpoints', () => {
     assert.equal(res.status, 400);
   });
 
-  test('POST /webhook/nonilion returns 501 Not Implemented', async () => {
+  test('POST /webhook/nonilion answers a message payload via the orchestrator', async () => {
+    const res = await fetch(`${baseUrl}/webhook/nonilion`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: 'Hello from automated test', userId: 'u1', channel: 'general' }),
+    });
+
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.match(body.text, /Hello from StyleScent/i);
+    assert.match(body.text, /Hello from automated test/);
+    assert.ok(Array.isArray(body.files));
+    assert.ok(body.trace, 'Webhook reply should include the orchestrator trace');
+  });
+
+  test('POST /webhook/nonilion accepts a nested message payload', async () => {
+    const res = await fetch(`${baseUrl}/webhook/nonilion`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: { text: 'Hello from automated test', from: { id: 'u2' } } }),
+    });
+
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.match(body.text, /Hello from StyleScent/i);
+  });
+
+  test('POST /webhook/nonilion rejects a payload with no message text', async () => {
     const res = await fetch(`${baseUrl}/webhook/nonilion`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ event: 'ping' }),
     });
 
-    assert.equal(res.status, 501);
+    assert.equal(res.status, 400);
     const body = await res.json();
-    assert.equal(body.status, 'not_implemented');
-    assert.match(body.message, /Waiting for official Nonilion developer guide/i);
+    assert.match(body.error, /Could not find a message text/i);
   });
 });

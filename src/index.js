@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 import { config } from './config.js';
 import { logger } from './logger.js';
 import { handleRequest } from './agent/orchestrator.js';
+import { parseIncoming } from './nonilion/adapter.js';
 import { loadData } from './data/load.js';
 
 // Load and validate core datasets at startup (fails fast if corrupted or invalid)
@@ -46,7 +47,7 @@ app.get('/', (req, res) => {
     endpoints: {
       health: 'GET /health',
       chat: 'POST /dev/chat (non-production only)',
-      webhook: 'POST /webhook/nonilion (stub until the Nonilion guide arrives)',
+      webhook: 'POST /webhook/nonilion (live; tolerant parser until the official Nonilion guide arrives)',
     },
     data: { perfumes: datasets.perfumes.length },
   });
@@ -92,15 +93,38 @@ if (config.NODE_ENV !== 'production') {
   });
 }
 
-// Nonilion webhook endpoint (stub for M0)
-app.post('/webhook/nonilion', (req, res) => {
-  // TODO(NONILION_GUIDE): Implement authentication verification and request dispatching
-  // once the official Nonilion developer guide is provided.
-  logger.info({ body: req.body }, 'Received request on /webhook/nonilion stub');
-  res.status(501).json({
-    status: 'not_implemented',
-    message: 'Webhook handler is not implemented. Waiting for official Nonilion developer guide.',
-  });
+// Nonilion webhook endpoint — live since the Render deploy (2026-11-11).
+// Parses the incoming payload tolerantly (see src/nonilion/adapter.js),
+// runs it through the same orchestrator as /dev/chat, and replies inline
+// as JSON. File/image attachments are summarised by name/size here — the
+// HTTP reply carries no binary bodies. Official Nonilion auth/signature
+// verification still waits on the developer guide (see adapter.js TODOs).
+app.post('/webhook/nonilion', async (req, res, next) => {
+  try {
+    const normalized = await parseIncoming(req);
+    if (!normalized) {
+      return res.status(400).json({
+        error: 'Could not find a message text in the webhook payload',
+        accepted: 'JSON with a "text" field, e.g. {"text":"Outfit for a college fest","userId":"u1","channel":"general"}',
+      });
+    }
+    const response = await handleRequest(normalized);
+    const summarise = (items) =>
+      (items || []).map((f) => ({
+        name: f.name,
+        mime: f.mime,
+        sizeBytes: f.buffer ? f.buffer.length : 0,
+      }));
+    res.status(200).json({
+      text: response.text,
+      files: summarise(response.files),
+      images: summarise(response.images),
+      progress: response.progress,
+      trace: response.trace,
+    });
+  } catch (err) {
+    next(err);
+  }
 });
 
 // Central Express error handling middleware

@@ -48,6 +48,7 @@ app.get('/', (req, res) => {
       health: 'GET /health',
       chat: 'POST /dev/chat (non-production only)',
       webhook: 'POST /webhook/nonilion (live; tolerant parser until the official Nonilion guide arrives)',
+      chat_completions: 'POST /v1/chat/completions (OpenAI-compatible, for Nonilion Import)',
     },
     data: { perfumes: datasets.perfumes.length },
   });
@@ -92,6 +93,87 @@ if (config.NODE_ENV !== 'production') {
     }
   });
 }
+
+// OpenAI-compatible chat completions endpoint — added 2026-11-11 so Nonilion
+// can import StyleScent via Hire an agent → IMPORT → Other, which only speaks
+// OpenAI-compatible APIs ({baseUrl}/chat/completions). The robot-button
+// "Connect a bot" flow in the room did nothing when clicked, so this is the
+// working route into Nonilion. No auth required; any model name is accepted
+// and ignored. Supports both plain JSON replies and SSE streaming.
+app.post('/v1/chat/completions', async (req, res, next) => {
+  try {
+    const messages = req.body?.messages;
+    if (!Array.isArray(messages) || messages.length === 0) {
+      return res.status(400).json({
+        error: { message: 'Request body must include a non-empty "messages" array', type: 'invalid_request_error' },
+      });
+    }
+    const lastUser = [...messages].reverse().find((m) => m?.role === 'user');
+    const rawContent = lastUser?.content;
+    const text = typeof rawContent === 'string'
+      ? rawContent
+      : Array.isArray(rawContent)
+        ? rawContent.filter((p) => p?.type === 'text').map((p) => p.text).join('\n')
+        : '';
+    if (!text || text.trim() === '') {
+      return res.status(400).json({
+        error: { message: 'The last user message must contain text', type: 'invalid_request_error' },
+      });
+    }
+    const model = typeof req.body?.model === 'string' && req.body.model ? req.body.model : 'stylescent';
+    const response = await handleRequest({
+      text,
+      userId: typeof req.body?.user === 'string' ? req.body.user : 'nonilion-user',
+      channel: 'nonilion',
+    });
+    const completion = {
+      id: `chatcmpl-${Date.now().toString(36)}`,
+      object: 'chat.completion',
+      created: Math.floor(Date.now() / 1000),
+      model,
+      choices: [
+        {
+          index: 0,
+          message: { role: 'assistant', content: response.text },
+          finish_reason: 'stop',
+        },
+      ],
+      usage: { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 },
+    };
+    if (req.body?.stream) {
+      res.writeHead(200, {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        Connection: 'keep-alive',
+      });
+      const words = response.text.split(/(?<=\s)/);
+      for (const word of words) {
+        res.write(`data: ${JSON.stringify({
+          id: completion.id, object: 'chat.completion.chunk', created: completion.created, model,
+          choices: [{ index: 0, delta: { role: 'assistant', content: word }, finish_reason: null }],
+        })}\n\n`);
+      }
+      res.write(`data: ${JSON.stringify({
+        id: completion.id, object: 'chat.completion.chunk', created: completion.created, model,
+        choices: [{ index: 0, delta: {}, finish_reason: 'stop' }],
+      })}\n\n`);
+      res.write('data: [DONE]\n\n');
+      res.end();
+      return;
+    }
+    res.status(200).json(completion);
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Some OpenAI-compatible clients probe the model list before chatting.
+app.get('/v1/models', (req, res) => {
+  res.status(200).json({
+    object: 'list',
+    data: [{ id: 'stylescent', object: 'model', created: 1794405600, owned_by: 'stylescent' }],
+  });
+});
 
 // Nonilion webhook endpoint — live since the Render deploy (2026-11-11).
 // Parses the incoming payload tolerantly (see src/nonilion/adapter.js),

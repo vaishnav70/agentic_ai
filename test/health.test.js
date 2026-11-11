@@ -109,4 +109,54 @@ describe('Server Endpoints', () => {
     const body = await res.json();
     assert.match(body.error, /Could not find a message text/i);
   });
+
+  test('POST /v1/chat/completions answers in OpenAI shape', async () => {
+    const res = await fetch(`${baseUrl}/v1/chat/completions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'stylescent',
+        messages: [{ role: 'user', content: 'Hello from automated test' }],
+      }),
+    });
+
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.equal(body.object, 'chat.completion');
+    assert.equal(body.choices[0].message.role, 'assistant');
+    assert.match(body.choices[0].message.content, /Hello from StyleScent/i);
+    assert.equal(body.choices[0].finish_reason, 'stop');
+  });
+
+  test('POST /v1/chat/completions streams SSE when stream is true', async () => {
+    const res = await fetch(`${baseUrl}/v1/chat/completions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'stylescent',
+        messages: [{ role: 'user', content: 'Hello from automated test' }],
+        stream: true,
+      }),
+    });
+
+    assert.equal(res.status, 200);
+    assert.match(res.headers.get('content-type'), /text\/event-stream/);
+    const text = await res.text();
+    assert.match(text, /data: \[DONE\]/);
+    // Reassemble the streamed deltas: the reply is split across chunks.
+    const streamed = text
+      .split('\n')
+      .filter((line) => line.startsWith('data: {'))
+      .map((line) => JSON.parse(line.slice(6)).choices[0].delta?.content || '')
+      .join('');
+    assert.match(streamed, /Hello from StyleScent/);
+  });
+
+  test('GET /v1/models lists the stylescent model', async () => {
+    const res = await fetch(`${baseUrl}/v1/models`);
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.equal(body.object, 'list');
+    assert.equal(body.data[0].id, 'stylescent');
+  });
 });

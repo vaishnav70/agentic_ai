@@ -364,8 +364,8 @@
   {
     "id": "p_006",
     "rank": 6,
-    "name": "Terre d'Hermès",
-    "brand": "Hermès",
+    "name": "Terre d'Herm\u00e8s",
+    "brand": "Herm\u00e8s",
     "marketed_for": "men",
     "family": "woody",
     "notes": {
@@ -693,7 +693,7 @@
   {
     "id": "p_011",
     "rank": 11,
-    "name": "Althaïr",
+    "name": "Altha\u00efr",
     "brand": "Parfums de Marly",
     "marketed_for": "men",
     "family": "gourmand",
@@ -1264,7 +1264,7 @@
   {
     "id": "p_020",
     "rank": 20,
-    "name": "Gentleman Réserve Privée",
+    "name": "Gentleman R\u00e9serve Priv\u00e9e",
     "brand": "Givenchy",
     "marketed_for": "men",
     "family": "woody",
@@ -1616,7 +1616,7 @@
     "id": "p_026",
     "rank": 26,
     "name": "H24",
-    "brand": "Hermès",
+    "brand": "Herm\u00e8s",
     "marketed_for": "men",
     "family": "aromatic",
     "notes": {
@@ -2365,7 +2365,7 @@
     "id": "p_039",
     "rank": 39,
     "name": "La Vie Est Belle",
-    "brand": "Lancôme",
+    "brand": "Lanc\u00f4me",
     "marketed_for": "women",
     "family": "floral",
     "notes": {
@@ -2601,5 +2601,847 @@
       "vibe"
     ],
     "source": "team research via web search - TO VERIFY before demo"
+  },
+  {
+    "id": "p_043",
+    "rank": 43,
+    "name": "Luna Rossa Carbon",
+    "brand": "Prada",
+    "marketed_for": "men",
+    "family": "aromatic",
+    "notes": {
+      "top": [
+        "bergamot",
+        "pepper"
+      ],
+      "heart": [
+        "lavender",
+        "metallic notes",
+        "watery notes",
+        "coal",
+        "soil tincture"
+      ],
+      "base": [
+        "ambroxan",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 8,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "interview"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "confident",
+      "fresh",
+      "elegant"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com/p/43402",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_044",
+    "rank": 44,
+    "name": "Versace Pour Homme",
+    "brand": "Versace",
+    "marketed_for": "men",
+    "family": "aromatic",
+    "notes": {
+      "top": [
+        "lemon",
+        "bergamot",
+        "neroli",
+        "rose de mai"
+      ],
+      "heart": [
+        "hyacinth",
+        "cedar",
+        "clary sage",
+        "geranium"
+      ],
+      "base": [
+        "tonka bean",
+        "musk",
+        "amber"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "college_fest"
+    ],
+    "time_of_day": [
+      "day"
+    ],
+    "vibe": [
+      "fresh",
+      "elegant",
+      "calm"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_045",
+    "rank": 45,
+    "name": "Boss Bottled",
+    "brand": "Hugo Boss",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "apple",
+        "plum",
+        "bergamot",
+        "lemon",
+        "oakmoss",
+        "geranium"
+      ],
+      "heart": [
+        "cinnamon",
+        "mahogany",
+        "carnation"
+      ],
+      "base": [
+        "vanilla",
+        "sandalwood",
+        "cedar",
+        "vetiver",
+        "olive tree"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "interview",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "confident",
+      "elegant",
+      "calm"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_046",
+    "rank": 46,
+    "name": "Gentleman Eau de Parfum",
+    "brand": "Givenchy",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "black pepper",
+        "lavender",
+        "bergamot"
+      ],
+      "heart": [
+        "orris",
+        "cinnamon",
+        "clove"
+      ],
+      "base": [
+        "black vanilla husk",
+        "tolu balsam",
+        "patchouli",
+        "benzoin",
+        "tonka bean"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "wedding",
+      "office"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "elegant",
+      "romantic",
+      "confident"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_047",
+    "rank": 47,
+    "name": "Armani Code Parfum",
+    "brand": "Giorgio Armani",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "bergamot",
+        "bergamot leaf"
+      ],
+      "heart": [
+        "iris",
+        "aldehydes",
+        "clary sage",
+        "orris"
+      ],
+      "base": [
+        "tonka bean",
+        "cedar"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party",
+      "office"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "elegant",
+      "romantic",
+      "confident"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Giorgio_Armani/armani-code-parfum",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_048",
+    "rank": 48,
+    "name": "9 PM",
+    "brand": "Afnan",
+    "marketed_for": "men",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "apple",
+        "cinnamon",
+        "wild lavender",
+        "bergamot"
+      ],
+      "heart": [
+        "orange blossom",
+        "lily of the valley"
+      ],
+      "base": [
+        "vanilla",
+        "tonka bean",
+        "amber",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "party",
+      "date_night",
+      "college_fest"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "bold",
+      "romantic"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_049",
+    "rank": 49,
+    "name": "Encre Noire",
+    "brand": "Lalique",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "cypress",
+        "vetiver"
+      ],
+      "heart": [
+        "haitian vetiver",
+        "bourbon vetiver"
+      ],
+      "base": [
+        "musk",
+        "cashmere wood"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "calm",
+      "bold"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_050",
+    "rank": 50,
+    "name": "La Yuqawam Homme",
+    "brand": "Rasasi",
+    "marketed_for": "men",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "raspberry",
+        "saffron",
+        "thyme"
+      ],
+      "heart": [
+        "olibanum",
+        "jasmine",
+        "artemisia"
+      ],
+      "base": [
+        "leather",
+        "suede",
+        "woody notes",
+        "amber"
+      ]
+    },
+    "longevity_hours": "10-12 hours",
+    "longevity_min_hours": 10,
+    "longevity_max_hours": 12,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "wedding",
+      "festival_traditional",
+      "date_night",
+      "party"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "bold",
+      "elegant",
+      "confident"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Rasasi/La-Yuqawam-Homme-19668.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_051",
+    "rank": 51,
+    "name": "Reflection Man",
+    "brand": "Amouage",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "rosemary",
+        "red pepper berries",
+        "bitter orange leaves"
+      ],
+      "heart": [
+        "neroli",
+        "jasmine",
+        "orris",
+        "ylang-ylang"
+      ],
+      "base": [
+        "vetiver",
+        "patchouli",
+        "sandalwood",
+        "cedar"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "wedding",
+      "office",
+      "festival_traditional",
+      "interview"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "fresh",
+      "calm"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Amouage/Reflection-Man-920.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_052",
+    "rank": 52,
+    "name": "Hacivat",
+    "brand": "Nishane",
+    "marketed_for": "unisex",
+    "family": "fruity",
+    "notes": {
+      "top": [
+        "pineapple",
+        "grapefruit",
+        "bergamot"
+      ],
+      "heart": [
+        "jasmine",
+        "patchouli",
+        "cedar"
+      ],
+      "base": [
+        "oakmoss",
+        "woody notes"
+      ]
+    },
+    "longevity_hours": "8-12 hours",
+    "longevity_min_hours": 8,
+    "longevity_max_hours": 12,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "party",
+      "casual",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "confident",
+      "fresh",
+      "elegant"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Nishane/Hacivat-44174.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_053",
+    "rank": 53,
+    "name": "Cedrat Boise",
+    "brand": "Mancera",
+    "marketed_for": "unisex",
+    "family": "citrus",
+    "notes": {
+      "top": [
+        "sicilian lemon",
+        "black currant",
+        "bergamot",
+        "spicy notes"
+      ],
+      "heart": [
+        "fruity notes",
+        "patchouli leaf",
+        "water jasmine"
+      ],
+      "base": [
+        "cedar",
+        "leather",
+        "sandalwood",
+        "moss",
+        "musk",
+        "vanilla"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "party",
+      "college_fest"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "fresh",
+      "playful",
+      "confident"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Mancera/Cedrat_Boise",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_054",
+    "rank": 54,
+    "name": "Hawas for Him",
+    "brand": "Rasasi",
+    "marketed_for": "men",
+    "family": "aromatic",
+    "notes": {
+      "top": [
+        "apple",
+        "bergamot",
+        "lemon",
+        "cinnamon"
+      ],
+      "heart": [
+        "watery notes",
+        "plum",
+        "orange blossom",
+        "cardamom"
+      ],
+      "base": [
+        "ambergris",
+        "musk",
+        "driftwood",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "party",
+      "college_fest",
+      "casual",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "fresh",
+      "bold"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_055",
+    "rank": 55,
+    "name": "L'Eau d'Issey Pour Homme",
+    "brand": "Issey Miyake",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "yuzu",
+        "lemon",
+        "bergamot",
+        "lemon verbena",
+        "mandarin orange",
+        "cypress",
+        "calone",
+        "coriander",
+        "sage",
+        "tarragon"
+      ],
+      "heart": [
+        "blue lotus",
+        "nutmeg",
+        "lily of the valley",
+        "saffron",
+        "bourbon geranium",
+        "ceylon cinnamon",
+        "mignonette"
+      ],
+      "base": [
+        "tahitian vetiver",
+        "musk",
+        "cedar",
+        "sandalwood",
+        "tobacco",
+        "amber"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "interview"
+    ],
+    "time_of_day": [
+      "day"
+    ],
+    "vibe": [
+      "fresh",
+      "calm",
+      "elegant"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Issey-Miyake/L-Eau-d-Issey-Pour-Homme-721.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
   }
 ]

@@ -121,7 +121,7 @@ export function findFragrances(query, data, tools) {
   for (const step of RELAXATION_ORDER) {
     let changed = false;
 
-    if (step === 'drop_minLongevityHours' && currentQuery.minLongevityHours !== undefined && currentQuery.minLongevityHours !== null) {
+    if (step === 'drop_min_longevity' && currentQuery.minLongevityHours !== undefined && currentQuery.minLongevityHours !== null) {
       delete currentQuery.minLongevityHours;
       relaxed.push('minimum longevity requirement');
       changed = true;
@@ -129,7 +129,7 @@ export function findFragrances(query, data, tools) {
       delete currentQuery.projection;
       relaxed.push('projection preference');
       changed = true;
-    } else if (step === 'drop_timeOfDay' && currentQuery.timeOfDay) {
+    } else if (step === 'drop_time_of_day' && currentQuery.timeOfDay) {
       delete currentQuery.timeOfDay;
       relaxed.push('time of day constraint');
       changed = true;

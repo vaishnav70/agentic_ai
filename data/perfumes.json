@@ -2370,7 +2370,7 @@
     "family": "floral",
     "notes": {
       "top": [
-        "blackcurrant",
+        "black currant",
         "pear"
       ],
       "heart": [
@@ -2385,8 +2385,8 @@
         "patchouli"
       ]
     },
-    "longevity_hours": "8-10 hours",
-    "longevity_min_hours": 8,
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
     "longevity_max_hours": 10,
     "longevity": "long",
     "projection": "strong",
@@ -2396,11 +2396,14 @@
       "winter"
     ],
     "occasions": [
+      "casual",
       "date_night",
+      "festival_traditional",
       "party",
       "wedding"
     ],
     "time_of_day": [
+      "day",
       "evening",
       "night"
     ],
@@ -2410,15 +2413,18 @@
       "playful"
     ],
     "price_band": "premium",
-    "sources": [],
-    "source_agreement": "low",
-    "confidence": "medium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
     "verified": false,
     "inferred_fields": [
       "time_of_day",
       "vibe"
     ],
-    "source": "team research via web search - TO VERIFY before demo"
+    "source": "team research via web search"
   },
   {
     "id": "p_040",
@@ -3437,6 +3443,2352 @@
     ],
     "source_agreement": "medium",
     "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_056",
+    "rank": 56,
+    "name": "Coco Mademoiselle",
+    "brand": "Chanel",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "orange",
+        "mandarin orange",
+        "bergamot",
+        "orange blossom"
+      ],
+      "heart": [
+        "turkish rose",
+        "jasmine",
+        "mimosa",
+        "ylang-ylang"
+      ],
+      "base": [
+        "patchouli",
+        "white musk",
+        "vanilla",
+        "vetiver",
+        "tonka bean",
+        "opoponax"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "wedding",
+      "date_night",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "confident",
+      "romantic"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_057",
+    "rank": 57,
+    "name": "Baccarat Rouge 540",
+    "brand": "Maison Francis Kurkdjian",
+    "marketed_for": "unisex",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "saffron",
+        "jasmine"
+      ],
+      "heart": [
+        "amberwood",
+        "ambergris",
+        "hedione"
+      ],
+      "base": [
+        "fir resin",
+        "cedar",
+        "sugar",
+        "ambroxan",
+        "oakmoss"
+      ]
+    },
+    "longevity_hours": "8-12 hours",
+    "longevity_min_hours": 8,
+    "longevity_max_hours": 12,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "wedding",
+      "date_night",
+      "party",
+      "festival_traditional"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "elegant",
+      "confident",
+      "romantic"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_058",
+    "rank": 58,
+    "name": "Si",
+    "brand": "Giorgio Armani",
+    "marketed_for": "women",
+    "family": "fruity",
+    "notes": {
+      "top": [
+        "cassis"
+      ],
+      "heart": [
+        "freesia",
+        "may rose"
+      ],
+      "base": [
+        "vanilla",
+        "patchouli",
+        "woody notes",
+        "ambroxan"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 8,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "occasions": [
+      "office",
+      "date_night",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "romantic",
+      "confident"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Giorgio-Armani/Si-18453.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_059",
+    "rank": 59,
+    "name": "Chanel No 5",
+    "brand": "Chanel",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "aldehydes",
+        "ylang-ylang",
+        "neroli",
+        "bergamot",
+        "peach"
+      ],
+      "heart": [
+        "iris",
+        "jasmine",
+        "rose",
+        "lily of the valley"
+      ],
+      "base": [
+        "sandalwood",
+        "oakmoss",
+        "vanilla",
+        "patchouli",
+        "vetiver"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "wedding",
+      "office",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "confident",
+      "calm"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Chanel/Chanel-No-5-Eau-de-Parfum-40069.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_060",
+    "rank": 60,
+    "name": "Miss Dior",
+    "brand": "Dior",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "iris",
+        "peony",
+        "lily of the valley"
+      ],
+      "heart": [
+        "apricot",
+        "rose",
+        "peach"
+      ],
+      "base": [
+        "vanilla",
+        "musk",
+        "benzoin",
+        "tonka bean",
+        "sandalwood"
+      ]
+    },
+    "longevity_hours": "4-7 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "occasions": [
+      "date_night",
+      "office",
+      "casual",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "romantic",
+      "elegant",
+      "fresh"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_061",
+    "rank": 61,
+    "name": "Libre",
+    "brand": "Yves Saint Laurent",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "lavender",
+        "mandarin orange",
+        "black currant",
+        "petitgrain"
+      ],
+      "heart": [
+        "lavender",
+        "orange blossom",
+        "jasmine"
+      ],
+      "base": [
+        "madagascar vanilla",
+        "musk",
+        "cedar",
+        "ambergris"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "party",
+      "date_night",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "confident",
+      "bold",
+      "elegant"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_062",
+    "rank": 62,
+    "name": "Idole",
+    "brand": "Lancome",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "bergamot",
+        "pink pepper",
+        "pear"
+      ],
+      "heart": [
+        "rose",
+        "jasmine"
+      ],
+      "base": [
+        "white musk",
+        "vanilla",
+        "patchouli",
+        "cedar"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "date_night",
+      "wedding",
+      "interview"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "fresh",
+      "romantic"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Lancome/Idole-55795.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_063",
+    "rank": 63,
+    "name": "Donna Born in Roma",
+    "brand": "Valentino",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "black currant",
+        "pink pepper",
+        "bergamot"
+      ],
+      "heart": [
+        "jasmine",
+        "jasmine sambac",
+        "jasmine tea"
+      ],
+      "base": [
+        "bourbon vanilla",
+        "cashmeran",
+        "guaiac wood"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 8,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "party",
+      "date_night",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "romantic",
+      "bold"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Valentino/Valentino-Donna-Born-In-Roma-55805.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_064",
+    "rank": 64,
+    "name": "Lady Million",
+    "brand": "Paco Rabanne",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "raspberry",
+        "neroli",
+        "amalfi lemon"
+      ],
+      "heart": [
+        "african orange flower",
+        "jasmine",
+        "gardenia"
+      ],
+      "base": [
+        "white honey",
+        "patchouli",
+        "amber"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "party",
+      "wedding",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "bold",
+      "playful",
+      "confident"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Rabanne/Lady-Million-9045.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_065",
+    "rank": 65,
+    "name": "Daisy",
+    "brand": "Marc Jacobs",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "violet leaf",
+        "blood grapefruit",
+        "strawberry"
+      ],
+      "heart": [
+        "violet",
+        "gardenia",
+        "jasmine"
+      ],
+      "base": [
+        "musk",
+        "white woods",
+        "vanilla"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "college_fest",
+      "office"
+    ],
+    "time_of_day": [
+      "day"
+    ],
+    "vibe": [
+      "fresh",
+      "playful",
+      "calm"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_066",
+    "rank": 66,
+    "name": "Cloud",
+    "brand": "Ariana Grande",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "lavender",
+        "pear",
+        "bergamot"
+      ],
+      "heart": [
+        "whipped cream",
+        "praline",
+        "coconut",
+        "vanilla orchid"
+      ],
+      "base": [
+        "musk",
+        "woody notes"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "college_fest",
+      "date_night",
+      "party"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "calm",
+      "romantic"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_067",
+    "rank": 67,
+    "name": "Her",
+    "brand": "Burberry",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "strawberry",
+        "raspberry",
+        "blackberry",
+        "sour cherry",
+        "black currant",
+        "mandarin orange",
+        "lemon"
+      ],
+      "heart": [
+        "violet",
+        "jasmine"
+      ],
+      "base": [
+        "musk",
+        "vanilla",
+        "cashmeran",
+        "woody notes",
+        "amber",
+        "oakmoss",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "4-7 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "casual",
+      "college_fest",
+      "party",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "playful",
+      "fresh",
+      "bold"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Burberry/Burberry-Her-51694.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_068",
+    "rank": 68,
+    "name": "Black Orchid",
+    "brand": "Tom Ford",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "truffle",
+        "gardenia",
+        "black currant",
+        "ylang-ylang",
+        "jasmine",
+        "bergamot",
+        "mandarin orange",
+        "amalfi lemon"
+      ],
+      "heart": [
+        "orchid",
+        "spices",
+        "gardenia",
+        "fruity notes",
+        "ylang-ylang",
+        "jasmine",
+        "lotus"
+      ],
+      "base": [
+        "mexican chocolate",
+        "patchouli",
+        "vanilla",
+        "incense",
+        "amber",
+        "sandalwood",
+        "vetiver",
+        "white musk"
+      ]
+    },
+    "longevity_hours": "8-12 hours",
+    "longevity_min_hours": 8,
+    "longevity_max_hours": 12,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party",
+      "wedding",
+      "festival_traditional"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "bold",
+      "elegant",
+      "confident"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/p/1018",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_069",
+    "rank": 69,
+    "name": "Flowerbomb",
+    "brand": "Viktor&Rolf",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "tea",
+        "bergamot",
+        "osmanthus"
+      ],
+      "heart": [
+        "orchid",
+        "jasmine",
+        "rose",
+        "freesia",
+        "african orange flower"
+      ],
+      "base": [
+        "patchouli",
+        "musk",
+        "vanilla"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "wedding",
+      "date_night",
+      "party"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "romantic",
+      "elegant",
+      "playful"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_070",
+    "rank": 70,
+    "name": "Bloom",
+    "brand": "Gucci",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "jasmine"
+      ],
+      "heart": [
+        "tuberose"
+      ],
+      "base": [
+        "rangoon creeper"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "date_night",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "romantic",
+      "fresh",
+      "elegant"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Gucci/Gucci-Bloom-44894.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_071",
+    "rank": 71,
+    "name": "Chloe Eau de Parfum",
+    "brand": "Chloe",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "peony",
+        "litchi",
+        "freesia"
+      ],
+      "heart": [
+        "rose",
+        "lily of the valley",
+        "magnolia"
+      ],
+      "base": [
+        "virginia cedar",
+        "amber"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "wedding",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "romantic",
+      "elegant",
+      "fresh"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Chlo-/Chlo-Eau-de-Parfum-1733.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_072",
+    "rank": 72,
+    "name": "Euphoria",
+    "brand": "Calvin Klein",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "pomegranate",
+        "persimmon",
+        "green accord"
+      ],
+      "heart": [
+        "black orchid",
+        "lotus",
+        "champaca"
+      ],
+      "base": [
+        "mahogany",
+        "amber",
+        "black violet",
+        "whipped cream"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party",
+      "casual"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "romantic",
+      "bold",
+      "elegant"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_073",
+    "rank": 73,
+    "name": "Fantasy",
+    "brand": "Britney Spears",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "kiwi",
+        "red litchi",
+        "quince"
+      ],
+      "heart": [
+        "white chocolate",
+        "cupcake accord",
+        "orchid",
+        "jasmine"
+      ],
+      "base": [
+        "musk",
+        "orris root",
+        "woody notes"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "college_fest",
+      "party",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "romantic",
+      "fresh"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com/p/600",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_074",
+    "rank": 74,
+    "name": "Lovely",
+    "brand": "Sarah Jessica Parker",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "nectarine",
+        "bergamot",
+        "rosewood",
+        "lavender"
+      ],
+      "heart": [
+        "apple martini",
+        "white daffodil",
+        "orchid"
+      ],
+      "base": [
+        "white amber",
+        "cedar",
+        "woody notes",
+        "white musk"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "soft",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "office",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "calm",
+      "elegant",
+      "romantic"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_075",
+    "rank": 75,
+    "name": "Cool Water Woman",
+    "brand": "Davidoff",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "melon",
+        "lotus",
+        "lemon",
+        "pineapple",
+        "quince",
+        "calone",
+        "lily",
+        "black currant"
+      ],
+      "heart": [
+        "lotus",
+        "water lily",
+        "lily of the valley",
+        "jasmine",
+        "honey",
+        "hawthorn",
+        "rose"
+      ],
+      "base": [
+        "musk",
+        "vetiver",
+        "violet root",
+        "sandalwood",
+        "raspberry",
+        "peach",
+        "blackberry",
+        "vanilla"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "college_fest"
+    ],
+    "time_of_day": [
+      "day"
+    ],
+    "vibe": [
+      "fresh",
+      "calm",
+      "playful"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com/p/508",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_076",
+    "rank": 76,
+    "name": "Yara",
+    "brand": "Lattafa",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "orchid",
+        "heliotrope",
+        "tangerine"
+      ],
+      "heart": [
+        "gourmand accord",
+        "tropical fruits"
+      ],
+      "base": [
+        "vanilla",
+        "musk",
+        "sandalwood"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "festival_traditional",
+      "party",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "romantic",
+      "bold"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com/perfume/lattafa-perfumes/yara-76880.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_077",
+    "rank": 77,
+    "name": "Club de Nuit Woman",
+    "brand": "Armaf",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "bergamot",
+        "grapefruit",
+        "peach",
+        "orange"
+      ],
+      "heart": [
+        "geranium",
+        "jasmine",
+        "litchi",
+        "rose"
+      ],
+      "base": [
+        "musk",
+        "patchouli",
+        "vanilla",
+        "vetiver"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "party",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "confident",
+      "elegant",
+      "playful"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_078",
+    "rank": 78,
+    "name": "5th Avenue",
+    "brand": "Elizabeth Arden",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "lime blossom",
+        "lily of the valley",
+        "lilac",
+        "magnolia",
+        "bergamot",
+        "mandarin orange"
+      ],
+      "heart": [
+        "jasmine",
+        "tuberose",
+        "ylang-ylang",
+        "bulgarian rose",
+        "peach",
+        "violet",
+        "carnation",
+        "nutmeg"
+      ],
+      "base": [
+        "musk",
+        "iris",
+        "sandalwood",
+        "amber",
+        "vanilla",
+        "cloves"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "office",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "calm",
+      "fresh"
+    ],
+    "price_band": "budget",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_079",
+    "rank": 79,
+    "name": "Bright Crystal",
+    "brand": "Versace",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "pomegranate",
+        "yuzu",
+        "ice"
+      ],
+      "heart": [
+        "peony",
+        "lotus",
+        "magnolia"
+      ],
+      "base": [
+        "musk",
+        "mahogany",
+        "amber"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "college_fest",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "fresh",
+      "elegant",
+      "playful"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Versace/Bright-Crystal-632.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_080",
+    "rank": 80,
+    "name": "Light Blue",
+    "brand": "Dolce&Gabbana",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "sicilian lemon",
+        "apple",
+        "cedar",
+        "bellflower"
+      ],
+      "heart": [
+        "bamboo",
+        "jasmine",
+        "white rose"
+      ],
+      "base": [
+        "cedar",
+        "musk",
+        "amber"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "college_fest"
+    ],
+    "time_of_day": [
+      "day"
+    ],
+    "vibe": [
+      "fresh",
+      "playful",
+      "calm"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_081",
+    "rank": 81,
+    "name": "Romance",
+    "brand": "Ralph Lauren",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "rose",
+        "chamomile",
+        "ginger",
+        "lemon",
+        "yellow freesia"
+      ],
+      "heart": [
+        "lily",
+        "lotus",
+        "white violet",
+        "carnation"
+      ],
+      "base": [
+        "white musk",
+        "exotic woods",
+        "patchouli",
+        "oakmoss"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "wedding",
+      "date_night",
+      "office",
+      "casual"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "romantic",
+      "elegant",
+      "calm"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Ralph-Lauren/Romance-825.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_082",
+    "rank": 82,
+    "name": "Nina",
+    "brand": "Nina Ricci",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "amalfi lemon",
+        "lime"
+      ],
+      "heart": [
+        "granny smith apple",
+        "peony",
+        "praline",
+        "datura"
+      ],
+      "base": [
+        "apple tree",
+        "musk",
+        "virginia cedar"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "casual",
+      "college_fest",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "playful",
+      "fresh",
+      "romantic"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_083",
+    "rank": 83,
+    "name": "Amor Amor",
+    "brand": "Cacharel",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "black currant",
+        "orange",
+        "mandarin orange",
+        "grapefruit",
+        "cassia",
+        "bergamot"
+      ],
+      "heart": [
+        "rose",
+        "apricot",
+        "jasmine",
+        "lily",
+        "lily of the valley"
+      ],
+      "base": [
+        "tonka bean",
+        "vanilla",
+        "virginia cedar",
+        "musk",
+        "amber"
+      ]
+    },
+    "longevity_hours": "5-7 hours",
+    "longevity_min_hours": 5,
+    "longevity_max_hours": 7,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "party",
+      "college_fest",
+      "date_night"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "playful",
+      "romantic",
+      "bold"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.fragrantica.com/perfume/Cacharel/Amor-Amor-238.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_084",
+    "rank": 84,
+    "name": "My Way",
+    "brand": "Giorgio Armani",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "orange blossom",
+        "bergamot"
+      ],
+      "heart": [
+        "tuberose",
+        "indian jasmine"
+      ],
+      "base": [
+        "madagascar vanilla",
+        "white musk",
+        "virginia cedar"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 8,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "date_night",
+      "wedding",
+      "interview"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "romantic",
+      "fresh",
+      "elegant"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Giorgio_Armani/my-way-eau-de-parfum",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_085",
+    "rank": 85,
+    "name": "Paradoxe",
+    "brand": "Prada",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "pear",
+        "tangerine",
+        "bergamot"
+      ],
+      "heart": [
+        "orange blossom",
+        "neroli essence",
+        "neroli",
+        "jasmine sambac"
+      ],
+      "base": [
+        "bourbon vanilla",
+        "amber",
+        "white musk",
+        "benzoin"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "date_night",
+      "casual",
+      "party"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "elegant",
+      "confident",
+      "fresh"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com/p/75668",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_086",
+    "rank": 86,
+    "name": "Hypnotic Poison",
+    "brand": "Dior",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "coconut",
+        "plum",
+        "apricot"
+      ],
+      "heart": [
+        "brazilian rosewood",
+        "jasmine",
+        "caraway",
+        "tuberose",
+        "rose",
+        "lily of the valley"
+      ],
+      "base": [
+        "vanilla",
+        "almond",
+        "sandalwood",
+        "musk"
+      ]
+    },
+    "longevity_hours": "7-10 hours",
+    "longevity_min_hours": 7,
+    "longevity_max_hours": 10,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party",
+      "wedding",
+      "festival_traditional"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "bold",
+      "romantic",
+      "elegant"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_087",
+    "rank": 87,
+    "name": "Angel",
+    "brand": "Mugler",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "cotton candy",
+        "coconut",
+        "cassia",
+        "melon",
+        "jasmine",
+        "bergamot",
+        "pineapple",
+        "mandarin orange"
+      ],
+      "heart": [
+        "honey",
+        "apricot",
+        "blackberry",
+        "plum",
+        "orchid",
+        "peach",
+        "jasmine",
+        "lily of the valley",
+        "red berries",
+        "rose",
+        "caraway",
+        "nutmeg"
+      ],
+      "base": [
+        "patchouli",
+        "dark chocolate",
+        "caramel",
+        "vanilla",
+        "tonka bean",
+        "amber",
+        "musk",
+        "sandalwood"
+      ]
+    },
+    "longevity_hours": "8-12 hours",
+    "longevity_min_hours": 8,
+    "longevity_max_hours": 12,
+    "longevity": "long",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "party",
+      "date_night",
+      "festival_traditional"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "bold",
+      "playful",
+      "confident"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_088",
+    "rank": 88,
+    "name": "Mon Guerlain",
+    "brand": "Guerlain",
+    "marketed_for": "women",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "lavender",
+        "bergamot"
+      ],
+      "heart": [
+        "iris",
+        "jasmine sambac",
+        "rose"
+      ],
+      "base": [
+        "tahitian vanilla",
+        "coumarin",
+        "australian sandalwood",
+        "licorice",
+        "benzoin",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "date_night",
+      "casual",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "elegant",
+      "calm",
+      "romantic"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://beta.fragrantica.com/perfume/Guerlain/Mon-Guerlain-43297.html",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_089",
+    "rank": 89,
+    "name": "Peony & Blush Suede",
+    "brand": "Jo Malone London",
+    "marketed_for": "women",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "red apple"
+      ],
+      "heart": [
+        "peony",
+        "jasmine",
+        "carnation",
+        "rose"
+      ],
+      "base": [
+        "suede"
+      ]
+    },
+    "longevity_hours": "3-5 hours",
+    "longevity_min_hours": 3,
+    "longevity_max_hours": 5,
+    "longevity": "short",
+    "projection": "soft",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "office",
+      "wedding"
+    ],
+    "time_of_day": [
+      "day"
+    ],
+    "vibe": [
+      "romantic",
+      "fresh",
+      "calm"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_090",
+    "rank": 90,
+    "name": "Cheirosa 62 Perfume Mist",
+    "brand": "Sol de Janeiro",
+    "marketed_for": "women",
+    "family": "gourmand",
+    "notes": {
+      "top": [
+        "pistachio",
+        "almond"
+      ],
+      "heart": [
+        "heliotrope",
+        "jasmine petals"
+      ],
+      "base": [
+        "vanilla",
+        "salted caramel",
+        "sandalwood"
+      ]
+    },
+    "longevity_hours": "4-6 hours",
+    "longevity_min_hours": 4,
+    "longevity_max_hours": 6,
+    "longevity": "medium",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "casual",
+      "college_fest",
+      "party"
+    ],
+    "time_of_day": [
+      "day",
+      "evening"
+    ],
+    "vibe": [
+      "playful",
+      "bold",
+      "romantic"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.soldejaneiro.com",
+      "https://www.fragrancex.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
+    "verified": false,
+    "inferred_fields": [
+      "time_of_day",
+      "vibe"
+    ],
+    "source": "team research via web search"
+  },
+  {
+    "id": "p_091",
+    "rank": 91,
+    "name": "Vanilla | 28",
+    "brand": "Kayali",
+    "marketed_for": "unisex",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "vanilla orchid",
+        "jasmine"
+      ],
+      "heart": [
+        "brown sugar",
+        "tonka bean"
+      ],
+      "base": [
+        "amber",
+        "amberwood",
+        "musk",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "6-9 hours",
+    "longevity_min_hours": 6,
+    "longevity_max_hours": 9,
+    "longevity": "long",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "casual",
+      "party"
+    ],
+    "time_of_day": [
+      "day",
+      "evening",
+      "night"
+    ],
+    "vibe": [
+      "romantic",
+      "calm",
+      "bold"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.fragrantica.com",
+      "https://www.parfumo.com"
+    ],
+    "source_agreement": "medium",
+    "confidence": "medium",
     "verified": false,
     "inferred_fields": [
       "time_of_day",

@@ -30,20 +30,27 @@ describe('Fragrance Specialist', () => {
   });
 
   test('relaxation order activates sequentially and names relaxed fields', () => {
-    // Highly restrictive query that forces relaxation. Note: the dataset
-    // now HAS budget fragrances (8 since the Nov 2026 expansion), so the
-    // old budget-only constraint no longer forces relaxation on its own —
-    // the women's + soft-projection + 12h-longevity combination does.
-    // marketedFor is never relaxed, so the matcher relaxes projection,
-    // season and budget instead.
+    // Highly restrictive query that forces relaxation. Note: the women's
+    // pool is now too broad to force it — Fantasy and Club de Nuit Woman
+    // (budget, soft, long-lasting) match almost any women+budget
+    // combination exactly, and longevity is only a scoring dimension, not
+    // a hard filter, so raising it alone never forces relaxation. The
+    // unisex+budget pool is tiny (only unisex entries at budget price),
+    // so office/spring/day/soft/bold/12h has no >=40 match until the
+    // matcher relaxes projection, season and budget (Cedrat Boise, mid).
+    // marketedFor is never relaxed. Also note: two relaxation steps
+    // ('drop_min_longevity', 'drop_time_of_day') were silently dead
+    // until Nov 2026 because fragrance.js compared against the wrong
+    // step names; they are now aligned with RELAXATION_ORDER.
     const query = {
-      occasion: 'college_fest',
-      season: 'winter',
+      occasion: 'office',
+      season: 'spring',
       timeOfDay: 'day',
       projection: 'soft',
-      minLongevityHours: 12, // extremely high longevity
+      vibe: ['bold'],
+      minLongevityHours: 12,
       budget: 'budget',
-      marketedFor: 'women',
+      marketedFor: 'unisex',
     };
 
     const match = findFragrances(query, data, tools);

@@ -51,3 +51,4 @@ StyleScent is an AI personal-styling agent built for Nonilion (INNOVORTEX 4.0 ha
 - `GET /health`: Returns service health, uptime, and version (`200 OK`).
 - `POST /dev/chat`: Local testing chat endpoint accepting `{ "text": "..." }` (available in non-production). A successful full-look reply returns `text` plus `files` — `stylescent-shopping-list.csv` and `stylescent-outfit-plan.md` — and a `trace.checker` verdict.
 - `POST /webhook/nonilion`: Nonilion webhook receiver — parses the payload, runs the orchestrator, replies inline as JSON (official auth/format still pending the developer guide).
+- `POST /v1/chat/completions` + `GET /v1/models`: OpenAI-compatible endpoints so Nonilion can import the agent via Hire an agent → IMPORT → Other (Base URL `https://stylescent.onrender.com/v1`). The Import form requires a non-empty API key; use the documented placeholder `stylescent-demo` (not a secret — the backend accepts any key and ignores it).

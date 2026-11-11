@@ -98,8 +98,12 @@ if (config.NODE_ENV !== 'production') {
 // can import StyleScent via Hire an agent → IMPORT → Other, which only speaks
 // OpenAI-compatible APIs ({baseUrl}/chat/completions). The robot-button
 // "Connect a bot" flow in the room did nothing when clicked, so this is the
-// working route into Nonilion. No auth required; any model name is accepted
-// and ignored. Supports both plain JSON replies and SSE streaming.
+// working route into Nonilion. No auth required: any Authorization header is
+// accepted and ignored. Nonilion's Import form refuses an empty API key
+// (client-side "Paste your API key"), so the documented placeholder key for
+// that form is `stylescent-demo` — it is not a secret and grants nothing.
+// Any model name is accepted and ignored. Supports both plain JSON replies
+// and SSE streaming.
 app.post('/v1/chat/completions', async (req, res, next) => {
   try {
     const messages = req.body?.messages;

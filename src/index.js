@@ -36,6 +36,22 @@ const app = express();
 // Body parser limited to 1 MB as specified in design doc
 app.use(express.json({ limit: '1mb' }));
 
+// Landing page: plain status + links, so the deployed URL shows something useful.
+app.get('/', (req, res) => {
+  res.status(200).json({
+    name: 'StyleScent',
+    status: 'ok',
+    version,
+    mode: config.isEchoMode ? 'echo (set LLM_API_KEY + LLM_MODEL for the real agent)' : 'live',
+    endpoints: {
+      health: 'GET /health',
+      chat: 'POST /dev/chat (non-production only)',
+      webhook: 'POST /webhook/nonilion (stub until the Nonilion guide arrives)',
+    },
+    data: { perfumes: datasets.perfumes.length },
+  });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({

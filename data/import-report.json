@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "data/raw/perfumes_batch1.json",
+    "data/raw/perfumes_batch2.json",
+    "data/raw/perfumes_batch3.json"
+  ],
+  "entries_read": 20,
+  "kept": 20,
+  "duplicates_merged": 0,
+  "rejected": [],
+  "warnings": [
+    "File perfumes_batch2.json is empty (0 bytes), skipped.",
+    "File perfumes_batch3.json is empty (0 bytes), skipped."
+  ]
+}

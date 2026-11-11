@@ -1,0 +1,141 @@
+{
+  "patterns": [
+    "solid",
+    "stripes",
+    "checks",
+    "floral",
+    "polka",
+    "paisley",
+    "geometric",
+    "abstract"
+  ],
+  "pairing_rules": [
+    {
+      "a": "solid",
+      "b": "stripes",
+      "verdict": "good",
+      "reason": "Solids provide a clean anchor that lets stripes stand out naturally."
+    },
+    {
+      "a": "solid",
+      "b": "checks",
+      "verdict": "good",
+      "reason": "A solid piece grounds the visual geometry of checks without competing."
+    },
+    {
+      "a": "solid",
+      "b": "floral",
+      "verdict": "good",
+      "reason": "Solid colours balance prominent floral prints and prevent visual clutter."
+    },
+    {
+      "a": "solid",
+      "b": "polka",
+      "verdict": "good",
+      "reason": "Solid garments anchor playful polka dots for a well-proportioned outfit."
+    },
+    {
+      "a": "solid",
+      "b": "paisley",
+      "verdict": "good",
+      "reason": "Rich paisley designs require a calm solid companion to avoid overwhelming the eye."
+    },
+    {
+      "a": "solid",
+      "b": "geometric",
+      "verdict": "good",
+      "reason": "Sharp geometric patterns pop cleanly against neutral or solid backdrops."
+    },
+    {
+      "a": "solid",
+      "b": "abstract",
+      "verdict": "good",
+      "reason": "Abstract prints make an effective artistic focal point alongside solid garments."
+    },
+    {
+      "a": "solid",
+      "b": "solid",
+      "verdict": "good",
+      "reason": "Two solids create timeless color-blocked or monochromatic looks."
+    },
+    {
+      "a": "stripes",
+      "b": "checks",
+      "verdict": "avoid",
+      "reason": "Competing directional grids create high visual vibration that clashes."
+    },
+    {
+      "a": "stripes",
+      "b": "floral",
+      "verdict": "ok",
+      "reason": "Can work when subtle pinstripes sit beneath organic florals sharing a common hue."
+    },
+    {
+      "a": "stripes",
+      "b": "polka",
+      "verdict": "avoid",
+      "reason": "Rigid lines and round repeating dots produce jarring pattern interference."
+    },
+    {
+      "a": "stripes",
+      "b": "paisley",
+      "verdict": "avoid",
+      "reason": "Dense swirling motifs conflict aggressively with linear stripe rhythms."
+    },
+    {
+      "a": "stripes",
+      "b": "geometric",
+      "verdict": "ok",
+      "reason": "Linear elements can harmonize if stripe widths distinctly contrast geometric shapes."
+    },
+    {
+      "a": "stripes",
+      "b": "abstract",
+      "verdict": "avoid",
+      "reason": "Strict linear stripes feel disjointed against erratic abstract forms."
+    },
+    {
+      "a": "checks",
+      "b": "floral",
+      "verdict": "avoid",
+      "reason": "Heavy grid structures fight organic blooming botanicals for visual dominance."
+    },
+    {
+      "a": "checks",
+      "b": "polka",
+      "verdict": "avoid",
+      "reason": "Squares against circles create dizzying geometric dissonance."
+    },
+    {
+      "a": "checks",
+      "b": "paisley",
+      "verdict": "avoid",
+      "reason": "Both motifs carry heavy visual density and quickly overwhelm an ensemble."
+    },
+    {
+      "a": "checks",
+      "b": "geometric",
+      "verdict": "ok",
+      "reason": "Acceptable only when check size is significantly larger than micro-geometric accents."
+    },
+    {
+      "a": "floral",
+      "b": "paisley",
+      "verdict": "avoid",
+      "reason": "Both prints are intricate and busy, creating excessive decorative conflict."
+    },
+    {
+      "a": "floral",
+      "b": "geometric",
+      "verdict": "ok",
+      "reason": "Organic curves can offset structured geometric lines if one is understated."
+    },
+    {
+      "a": "polka",
+      "b": "geometric",
+      "verdict": "avoid",
+      "reason": "Multiple hard repeating shapes cause confusing focal tension."
+    }
+  ],
+  "scale_rule": "When mixing two prints, use different scales (one large, one small) and share at least one common colour."
+}

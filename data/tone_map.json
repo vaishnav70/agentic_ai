@@ -1,0 +1,52 @@
+[
+  {
+    "key": "dark_bold_palette",
+    "description": "Deep, moody colorways with heavy contrast and saturated dark tones",
+    "vibes": ["bold", "confident"]
+  },
+  {
+    "key": "pastel_palette",
+    "description": "Soft, desaturated, gentle pastel hues with airy lightness",
+    "vibes": ["fresh", "calm"]
+  },
+  {
+    "key": "earthy_palette",
+    "description": "Warm terracotta, olive, tan, and natural woodland hues",
+    "vibes": ["calm", "confident"]
+  },
+  {
+    "key": "monochrome_neutral",
+    "description": "Subtle layered neutral palettes of greys, whites, and creams",
+    "vibes": ["calm", "elegant"]
+  },
+  {
+    "key": "bright_saturated",
+    "description": "High-energy vibrant colours like royal blue, crimson, and bright orange",
+    "vibes": ["playful", "bold"]
+  },
+  {
+    "key": "ethnic_festive",
+    "description": "Rich traditional palettes featuring maroon, mustard, emerald, and gold accents",
+    "vibes": ["elegant", "bold"]
+  },
+  {
+    "key": "smart_formal",
+    "description": "Crisp tailored suiting combinations of deep navy, charcoal, and pure white",
+    "vibes": ["confident", "elegant"]
+  },
+  {
+    "key": "casual_relaxed",
+    "description": "Easygoing combinations of denim blue, heather grey, and khaki",
+    "vibes": ["fresh", "playful"]
+  },
+  {
+    "key": "black_and_white",
+    "description": "High-contrast minimalist monochrome dressing",
+    "vibes": ["bold", "confident"]
+  },
+  {
+    "key": "jewel_tones",
+    "description": "Opulent emerald, deep plum, royal sapphire, and ruby tones",
+    "vibes": ["elegant", "romantic"]
+  }
+]

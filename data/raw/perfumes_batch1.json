@@ -1,0 +1,939 @@
+[
+  {
+    "rank": 1,
+    "name": "Aventus",
+    "brand": "Creed",
+    "marketed_for": "men",
+    "family": "fruity",
+    "notes": {
+      "top": [
+        "pineapple",
+        "bergamot",
+        "blackcurrant",
+        "apple",
+        "lemon",
+        "pink pepper"
+      ],
+      "heart": [
+        "birch",
+        "patchouli",
+        "moroccan jasmine",
+        "rose",
+        "juniper berries",
+        "pineapple"
+      ],
+      "base": [
+        "musk",
+        "oakmoss",
+        "ambergris",
+        "vanilla",
+        "birch",
+        "ambroxan",
+        "cedarwood"
+      ]
+    },
+    "longevity_hours": "5-10 hours",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "wedding",
+      "casual",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.reddit.com/r/fragrance/comments/1q0xi3o/2025_fragrantica_community_award_winners_are_out/",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cologne-for-men/",
+      "https://www.nordstrom.com/browse/men/grooming/cologne/bestsellers",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.jomashop.com/blog/articles/which-creed-colognes-last-the-longest",
+      "https://www.scento.com/blog/best-creed-perfumes-for-men-legendary-picks",
+      "https://www.fehman.com/blogs/news/creed-aventus-notes-explained-top-heart-base"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 2,
+    "name": "Bleu de Chanel Eau de Parfum",
+    "brand": "Chanel",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "grapefruit",
+        "lemon",
+        "mint",
+        "pink pepper",
+        "bergamot",
+        "aldehydes",
+        "coriander"
+      ],
+      "heart": [
+        "ginger",
+        "nutmeg",
+        "jasmine",
+        "melon"
+      ],
+      "base": [
+        "incense",
+        "amber",
+        "cedar",
+        "sandalwood",
+        "patchouli",
+        "labdanum",
+        "amberwood",
+        "vetiver",
+        "musk"
+      ]
+    },
+    "longevity_hours": "7-12 hours",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "date_night",
+      "casual"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cologne-for-men/",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://www.nordstrom.com/browse/men/grooming/cologne/bestsellers",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.fehman.com/blogs/news/bleu-de-chanel-review-scent-notes-performance",
+      "https://theperfumeescape.com/bleu-de-chanel-review-performance-dupes-modern-classic/",
+      "https://whatscent.app/magazine/bleu-de-chanel-edp-review"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 3,
+    "name": "Dior Homme Intense",
+    "brand": "Dior",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "lavender",
+        "tuscan iris"
+      ],
+      "heart": [
+        "iris",
+        "ambrette",
+        "pear"
+      ],
+      "base": [
+        "virginia cedar",
+        "vetiver"
+      ]
+    },
+    "longevity_hours": "8-10 hours",
+    "projection": null,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "wedding",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.reddit.com/r/fragrance/comments/1q0xi3o/2025_fragrantica_community_award_winners_are_out/",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.parfumo.com/Perfumes",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/",
+      "https://perfumdle.com/en/parfum/dior-dior-homme-intense/"
+    ],
+    "source_agreement": "medium",
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "rank": 4,
+    "name": "Sauvage Elixir",
+    "brand": "Dior",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "grapefruit",
+        "nutmeg",
+        "cinnamon",
+        "cardamom"
+      ],
+      "heart": [
+        "lavender"
+      ],
+      "base": [
+        "sandalwood",
+        "licorice",
+        "patchouli",
+        "amber",
+        "vetiver",
+        "dreamwood"
+      ]
+    },
+    "longevity_hours": "10-12 hours",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "wedding",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cologne-for-men/",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://mahadiperfumes.com/blogs/news/dior-sauvage-elixir-review-complete-guide-by-mahadi-perfumes-authentic-luxury-fragrance",
+      "https://www.michael84.co.uk/dior-sauvage-elixir-fragrance-review/"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 5,
+    "name": "XJ 1861 Naxos",
+    "brand": "Xerjoff",
+    "marketed_for": "unisex",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "lavender",
+        "bergamot",
+        "lemon"
+      ],
+      "heart": [
+        "honey",
+        "cinnamon",
+        "cashmeran",
+        "jasmine sambac"
+      ],
+      "base": [
+        "tobacco leaf",
+        "tonka bean",
+        "vanilla"
+      ]
+    },
+    "longevity_hours": "9-12 hours",
+    "projection": null,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.reddit.com/r/fragrance/comments/1q0xi3o/2025_fragrantica_community_award_winners_are_out/",
+      "https://www.parfumo.com/Perfumes/Tops/Unisex",
+      "https://www.parfumo.com/Perfumes",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://belvish.com/products/xerjoff-naxos-edp"
+    ],
+    "source_agreement": "high",
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "rank": 6,
+    "name": "Terre d'Hermès",
+    "brand": "Hermès",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "orange",
+        "grapefruit"
+      ],
+      "heart": [
+        "black pepper",
+        "pelargonium",
+        "flint"
+      ],
+      "base": [
+        "vetiver",
+        "cedar",
+        "patchouli",
+        "benzoin"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "casual",
+      "interview"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.reddit.com/r/fragrance/comments/1nwjvbg/robb_report_on_the_case_declaring_the_50_greatest/",
+      "https://www.nordstrom.com/browse/men/grooming/cologne/bestsellers?filterByBrand=hermes",
+      "https://scentgrail.com/holy-grail-scents/terre-dhermes-review/",
+      "https://www.feelingsexy.com.au/terre-dhermes-by-hermes-15230"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 7,
+    "name": "Layton",
+    "brand": "Parfums de Marly",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "apple",
+        "lavender",
+        "bergamot"
+      ],
+      "heart": [
+        "jasmine",
+        "violet"
+      ],
+      "base": [
+        "vanilla",
+        "amber",
+        "nutmeg",
+        "tonka bean",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "8-10 hours",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "date_night",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/",
+      "https://www.youtube.com/watch?v=dy7Tve-axbA"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 8,
+    "name": "Imagination",
+    "brand": "Louis Vuitton",
+    "marketed_for": "men",
+    "family": "fresh",
+    "notes": {
+      "top": [
+        "citron",
+        "calabrian bergamot",
+        "sicilian orange"
+      ],
+      "heart": [
+        "tunisian neroli",
+        "nigerian ginger",
+        "ceylon cinnamon"
+      ],
+      "base": [
+        "chinese black tea",
+        "ambroxan"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "projection": null,
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "occasions": [
+      "office",
+      "casual"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.parfumo.com/Perfumes",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.reddit.com/r/fragrance/comments/1nwjvbg/robb_report_on_the_case_declaring_the_50_greatest/",
+      "https://www.fregranzo.com/fragrance/louis-vuitton/imagination/"
+    ],
+    "source_agreement": "high",
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "rank": 9,
+    "name": "Spicebomb Extreme",
+    "brand": "Viktor & Rolf",
+    "marketed_for": "men",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "grapefruit",
+        "pimento",
+        "black pepper",
+        "pink pepper",
+        "elemi",
+        "bergamot"
+      ],
+      "heart": [
+        "cinnamon",
+        "cumin",
+        "saffron",
+        "paprika"
+      ],
+      "base": [
+        "tobacco",
+        "vanilla",
+        "bourbon",
+        "cistus",
+        "amber",
+        "tonka bean"
+      ]
+    },
+    "longevity_hours": "10+ hours",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "casual",
+      "party"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/",
+      "https://www.scento.com/fr/blog/best-winter-perfumes-for-men",
+      "https://belvish.com/products/viktor-rolf-spicebomb-extreme-edp-for-men",
+      "https://www.scento.com/perfumes/spicebomb-extreme-viktor-rolf",
+      "https://research.jgu.edu.in/page/10/?vid=N5jqGBMDKps&fastly=520"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 10,
+    "name": "Le Male Le Parfum",
+    "brand": "Jean Paul Gaultier",
+    "marketed_for": "men",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "cardamom"
+      ],
+      "heart": [
+        "lavender",
+        "iris"
+      ],
+      "base": [
+        "vanilla",
+        "woody notes",
+        "oriental notes"
+      ]
+    },
+    "longevity_hours": "4-10 hours",
+    "projection": "moderate",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party",
+      "wedding"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.theperfumeshop.com/jean-paul-gaultier/le-male-le-parfum/eau-de-parfum-spray/p/70800EDPJU?varSel=1250998",
+      "https://www.nykaaman.com/jean-paul-gaultier-le-male-eau-de-parfum/reviews/1003519",
+      "https://www.michael84.co.uk/le-male-le-parfum-jean-paul-gaultier-review/"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 11,
+    "name": "Althaïr",
+    "brand": "Parfums de Marly",
+    "marketed_for": "men",
+    "family": "gourmand",
+    "notes": {
+      "top": [
+        "orange blossom",
+        "bergamot",
+        "cinnamon",
+        "cardamom"
+      ],
+      "heart": [
+        "bourbon vanilla",
+        "elemi"
+      ],
+      "base": [
+        "guaiac wood",
+        "ambroxan",
+        "praline",
+        "musk",
+        "tonka bean",
+        "candied almond"
+      ]
+    },
+    "longevity_hours": "5-10 hours",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "date_night",
+      "wedding",
+      "casual",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.reddit.com/r/fragrance/comments/1q0xi3o/2025_fragrantica_community_award_winners_are_out/",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.parfumo.com/Perfumes",
+      "https://www.hnak.com/en-sa/parfums-de-marly-althair-edp",
+      "https://www.libertineparfumerie.com.au/products/parfums-de-marly-althair",
+      "https://www.reddit.com/r/Colognes/comments/15m95te/new_parfums_de_marly_althair_review/"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 12,
+    "name": "La Nuit de L'Homme",
+    "brand": "Yves Saint Laurent",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "cardamom",
+        "bergamot"
+      ],
+      "heart": [
+        "lavender",
+        "cedarwood"
+      ],
+      "base": [
+        "vetiver",
+        "caraway",
+        "cumin",
+        "coumarin"
+      ]
+    },
+    "longevity_hours": "6-8 hours",
+    "projection": "soft",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "party"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://m.shein.com/za/Yves-Saint-Laurent-YSL-La-Nuit-De-L-Homme-60ml-EDT-Spray-p-487411282.html"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 13,
+    "name": "Dior Homme Parfum",
+    "brand": "Dior",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "tuscan iris",
+        "italian orange"
+      ],
+      "heart": [
+        "leather",
+        "amber accord"
+      ],
+      "base": [
+        "sandalwood",
+        "ambrette",
+        "vetiver",
+        "patchouli"
+      ]
+    },
+    "longevity_hours": "8-10 hours",
+    "projection": null,
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "date_night",
+      "wedding",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://thescentlibrary.pk/blogs/guides/top-10-mens-perfumes-of-all-time",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://www.reddit.com/r/DesiFragranceAddicts/comments/1hgzzti/new_dior_homme_parfum_2025_thoughts/"
+    ],
+    "source_agreement": "medium",
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "rank": 14,
+    "name": "Angels' Share",
+    "brand": "By Kilian",
+    "marketed_for": "unisex",
+    "family": "oriental",
+    "notes": {
+      "top": [
+        "cognac"
+      ],
+      "heart": [
+        "cinnamon",
+        "tonka bean",
+        "oak"
+      ],
+      "base": [
+        "praline",
+        "vanilla",
+        "sandalwood",
+        "tonka bean"
+      ]
+    },
+    "longevity_hours": "5-10 hours",
+    "projection": "strong",
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "casual",
+      "party",
+      "date_night"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.reddit.com/r/fragrance/comments/1q0xi3o/2025_fragrantica_community_award_winners_are_out/",
+      "https://www.parfumo.com/Perfumes/Tops/Unisex",
+      "https://www.bykilian.com/product/19797/82905/perfume/angels-share/the-liquors",
+      "https://elixirperfume.co.in/products/angels-shere"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 15,
+    "name": "Bleu de Chanel Parfum",
+    "brand": "Chanel",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "lemon zest",
+        "bergamot",
+        "pink pepper"
+      ],
+      "heart": [
+        "lavender",
+        "geranium",
+        "iris",
+        "cedar"
+      ],
+      "base": [
+        "sandalwood",
+        "cedar",
+        "amber",
+        "vetiver"
+      ]
+    },
+    "longevity_hours": "7+ hours",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "date_night",
+      "casual",
+      "wedding"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://whatscent.app/magazine/bleu-de-chanel-edp-review",
+      "https://www.michael84.co.uk/bleu-de-chanel-parfum-review/",
+      "https://www.odora.it/en/perfumes/chanel-bleu-de-chanel-parfum"
+    ],
+    "source_agreement": "medium",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 16,
+    "name": "Green Irish Tweed",
+    "brand": "Creed",
+    "marketed_for": "men",
+    "family": "fresh",
+    "notes": {
+      "top": [
+        "lemon verbena"
+      ],
+      "heart": [
+        "iris",
+        "violet leaf"
+      ],
+      "base": [
+        "sandalwood",
+        "ambergris"
+      ]
+    },
+    "longevity_hours": "8-12 hours",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "occasions": [
+      "office",
+      "wedding",
+      "casual"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.jomashop.com/blog/articles/which-creed-colognes-last-the-longest",
+      "https://www.scento.com/blog/best-creed-perfumes-for-men-legendary-picks"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 17,
+    "name": "Viking",
+    "brand": "Creed",
+    "marketed_for": "men",
+    "family": "aromatic",
+    "notes": {
+      "top": [
+        "calabrian bergamot",
+        "sicilian lemon",
+        "pink pepper"
+      ],
+      "heart": [
+        "pepper",
+        "bulgarian rose",
+        "peppermint"
+      ],
+      "base": [
+        "indian sandalwood",
+        "haitian vetiver"
+      ]
+    },
+    "longevity_hours": "8-10 hours",
+    "projection": "strong",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "wedding",
+      "date_night"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.jomashop.com/blog/articles/which-creed-colognes-last-the-longest",
+      "https://www.scento.com/blog/best-creed-perfumes-for-men-legendary-picks"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 18,
+    "name": "Royal Oud",
+    "brand": "Creed",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "pink pepper",
+        "lemon",
+        "bergamot"
+      ],
+      "heart": [
+        "cedar",
+        "galbanum",
+        "angelica"
+      ],
+      "base": [
+        "oud",
+        "sandalwood",
+        "musk"
+      ]
+    },
+    "longevity_hours": "10-12 hours",
+    "projection": "moderate",
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "occasions": [
+      "office",
+      "wedding",
+      "party"
+    ],
+    "price_band": "premium",
+    "sources": [
+      "https://www.jomashop.com/blog/articles/which-creed-colognes-last-the-longest",
+      "https://www.scento.com/blog/best-creed-perfumes-for-men-legendary-picks"
+    ],
+    "source_agreement": "high",
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "rank": 19,
+    "name": "MYSLF Eau de Parfum",
+    "brand": "Yves Saint Laurent",
+    "marketed_for": "men",
+    "family": "floral",
+    "notes": {
+      "top": [
+        "bergamot",
+        "citrus",
+        "ginger",
+        "cardamom"
+      ],
+      "heart": [
+        "orange blossom"
+      ],
+      "base": [
+        "patchouli",
+        "warm woods"
+      ]
+    },
+    "longevity_hours": null,
+    "projection": null,
+    "seasons": null,
+    "occasions": null,
+    "price_band": "mid",
+    "sources": [
+      "https://www.forbes.com/sites/forbes-personal-shopper/article/best-cologne-for-men/",
+      "https://www.ulta.com/discover/fragrance/best-mens-cologne",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/"
+    ],
+    "source_agreement": "high",
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "rank": 20,
+    "name": "Gentleman Réserve Privée",
+    "brand": "Givenchy",
+    "marketed_for": "men",
+    "family": "woody",
+    "notes": {
+      "top": [
+        "bergamot"
+      ],
+      "heart": [
+        "iris",
+        "chestnut"
+      ],
+      "base": [
+        "whisky absolute",
+        "amber",
+        "wood accord"
+      ]
+    },
+    "longevity_hours": null,
+    "projection": null,
+    "seasons": null,
+    "occasions": [
+      "date_night",
+      "wedding",
+      "party"
+    ],
+    "price_band": "mid",
+    "sources": [
+      "https://www.reddit.com/r/fragrance/comments/1q0xi3o/2025_fragrantica_community_award_winners_are_out/",
+      "https://www.realmenrealstyle.com/25-top-mens-fragrances-2025/",
+      "https://www.parfumo.com/Perfumes/Tops/Men",
+      "https://www.tirabeauty.com/product/prada-lhomme-prada-eau-de-toilette-100ml-lbzwydxc5e"
+    ],
+    "source_agreement": "high",
+    "confidence": "low",
+    "verified": false
+  }
+]

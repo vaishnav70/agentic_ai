@@ -1,0 +1,26 @@
+RANKING METHOD
+There is no official global ranking of men's perfumes. The ranks in this
+dataset are a composite built by a web-search AI from several public
+rankings and lists: a perfume ranks higher when more independent sources
+list it and when it places higher in each. Notes, longevity and projection
+come from public sources and are community-reported, not lab-measured.
+
+COLLECTION DETAILS
+Date collected: 11 November 2026
+Tool used: [name of the AI, and whether web search / deep research was on]
+Collected by: [teammate name]
+Files: perfumes_batch1.json (ranks 1-20) [add batch2/batch3 when saved]
+
+SOURCES DISAGREED (copy this from the end of each AI response)
+Batch 1:
+- [perfume name]: [what the sources disagreed on, e.g. "longevity 4-6 vs 8-10 hours"]
+- [add one line per perfume the AI listed]
+(If the AI listed none, write: "none reported")
+
+Batch 2:
+(add when available)
+
+KNOWN LIMITS
+- Data is a team-curated sample, not a complete or official database.
+- Entries are marked verified: false until a team member checks them.
+- [add anything you noticed, e.g. "some entries have null projection"]

@@ -1,0 +1,25 @@
+{
+  "name": "stylescent",
+  "version": "0.1.0",
+  "description": "StyleScent AI personal-styling agent for Nonilion",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "chat": "node src/dev/cli.js",
+    "test": "node --test",
+    "data:import": "node scripts/import-research.js",
+    "data:report": "node scripts/data-report.js",
+    "match": "node scripts/try-match.js",
+    "golden:live": "node scripts/run-golden.js"
+  },
+  "dependencies": {
+    "@google/genai": "^3.0.0",
+    "express": "^5.3.0",
+    "pino": "^10.4.0",
+    "zod": "^4.6.7"
+  }
+}

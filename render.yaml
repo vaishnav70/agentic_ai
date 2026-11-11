@@ -1,0 +1,25 @@
+# Render Blueprint for StyleScent (INNOVORTEX 4.0 — Nonilion track).
+# What: One free web service running the Express app from src/index.js.
+# Why: Render is the deployment target in the project plan (design.md §10),
+# and a Blueprint lets "New → Blueprint" deploy straight from this repo.
+# Env: LLM_API_KEY / LLM_MODEL are left unset here on purpose — they are
+# secrets, set in the Render dashboard. Without them the app still starts
+# and serves / and /health, but answers in echo mode (no real agent).
+# NOTE: the free plan sleeps after ~15 min idle — open the URL once before
+# a demo to wake it. Use a paid instance for always-on (judging).
+services:
+  - type: web
+    name: stylescent
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/index.js
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        sync: false
